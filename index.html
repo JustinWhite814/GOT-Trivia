@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trivia!</title>
+</head>
+<body>
+    <section>
+    <h1>Welcome to the Game of Thrones Trivia Game</h1>
+    <h2>Yes I know... that was a lot of 'games'</h2>
+    <h3>Below there are two buttons, if you like to play hit play</h3>
+    <h4>If you dont understand how trivia works.. then click the other one....</h4>
+</section>
+    <div class="game">
+        <div class="question"></div>
+        <div class="choices">
+            <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+            <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+            <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+        </div>
+    </div>
+        <button class="play">Play</button>
+        <button class="information">Rules</button>
+    <script src="script.js"></script>
+</body>
+</html>
