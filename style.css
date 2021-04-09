@@ -4,3 +4,57 @@ body {
 .options {
     display: none;
 }
+.rules {
+    display: none;
+}
+.modal {
+   
+    background-color: rgba(0, 0,0, .4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    margin: auto;
+    display: none;
+}
+.noModal {
+    background-color: rgba(0, 0,0, .4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    margin: auto;
+    display: none;
+    
+}
+#modal-textbox{
+    background-color: rgb(255, 254,254);
+    /* height: 350px; */
+    width: 550px;
+    border-radius: 5px;
+    margin: 150px auto;
+    box-shadow: 0 2px 2px rbga(0, 0, 0, .4);
+    padding: 5rem;
+    
+}
+#modal-textbox {
+    text-align: center;
+    /* padding-top: 300px; */
+}
+.modal-buttons {
+	padding: 12px 18px;
+	background-color: #677996;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	font-family: 'Arial';
+	cursor: pointer;
+
+}

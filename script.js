@@ -3,13 +3,17 @@ const houseBtn = document.querySelector('.houses')
 const bkShowBtn = document.querySelector('.bookshow')
 const playBtn = document.querySelector('.play')
 const option = document.querySelector('.options')
-const rulesbtn = document.querySelector('information')
+const rulesBtn = document.querySelector('.info')
 const gameStart = document.querySelector('.game')
 const choiceA = document.querySelector('#A')
 const choiceB = document.querySelector('#B')
 const choiceC = document.querySelector('#C')
 const question = document.querySelector('.question')
 const backBtn = document.querySelector('.home')
+const rules = document.querySelector('.rules')
+const modal = document.querySelector('.modal')
+const noModal = document.querySelector('.noModal')
+const close = document.querySelector('#close')
 
 const section = document.querySelector('section')
 
@@ -207,13 +211,19 @@ function checkAnswer(ev)  {
 let q = questions[currentQuestion]
     if(q.correctAnswer == ev.target.id.toLowerCase() ){
     console.log('correct')
+    modal.style.display = 'block'
     if(currentQuestion < finalQuestion){
     currentQuestion++
     showQuestion()
-    }   
-    else console.log('incorrect')
+    } }  
+    else 
+    {
+    noModal.style.display = 'block'
+     console.log('incorrect')   
+    }
+    
     } 
-}
+
 
 function checkAnswer2(ev) {
     let q2 = questions2[currentQuestion]
@@ -240,6 +250,7 @@ function checkAnswer3(ev) {
         }
     }
     else {
+        
         console.log('incorrect')
         }
 }
@@ -250,16 +261,17 @@ function showOptions(ev){
     section.style.display = 'none';
     
 }
-// back button will toggle between pages {
-// function homebtn(ev){
-//     ev.preventDefault()
-//     section.style.display = 'block'
-//     gameStart.style.display = 'none'
 
-// }
-
-// backBtn.addEventListener('click', homebtn)
+const showRules = () => {
+    rules.style.display = 'block';
+    rules.style.textAlign = "center"
+    option.style.display = 'none';
+    section.style.display = 'none'
+}
+const closeModal = () => modal.style.display = 'none';
+close.addEventListener('click', closeModal)
 playBtn.addEventListener('click', showOptions)
 dragonBtn.addEventListener('click', showQuestion)
 houseBtn.addEventListener('click', showQuestion2)
 bkShowBtn.addEventListener('click', showQuestion3)
+rulesBtn.addEventListener('click', showRules)

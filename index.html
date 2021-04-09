@@ -14,7 +14,7 @@
     <h3>Below there are two buttons, if you like to play hit play</h3>
     <h4>If you dont understand how trivia works.. then click the other one....</h4>
     <button class="play">Play</button>
-    <button class="information">Rules</button>
+    <button class="info">Rules</button>
 
 </section>
     <div class="game">
@@ -23,8 +23,24 @@
             <div class="choice" id="B"></div>
             <div class="choice" id="C"></div>   
         </div>
+        <div class="modal">
+            <h1 id="modal-textbox">That is Correct!!!!</h1>
+            <button class="modal-buttons" id="close">Close</button>
+        </div>
+        <div class="noModal">
+            <h1 id="modal-textbox">Sorry that's Incorrect!!!!!</h1>
+            <div class="modal-footer">
+            <button class="modal-buttons" id="close">Close</button>
+        </div>
+        </div>
 
-        <button class="home">Back</button>
+        <button onclick="window.location.reload()">Back</button>
+        <div class="rules">
+            <h1>The rules are pretty simple. You have 3 categories to choose from. Once you choose from said categories you’ll be led to questions. You cannot move on from the question until you get it right. I’m not a fan of 
+                pass/fail so we’ll just let you guess until it’s OBVIOUS.
+                 Let’s see how well you ACTUALLY know game of thrones  
+            </h1>
+        </div>
         
     </div>
     <div class="options"> 
