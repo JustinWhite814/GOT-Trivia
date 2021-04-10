@@ -1,12 +1,77 @@
 body {
-    background-color: aliceblue;
+   
+    background-image: url('https://wallpapermemory.com/uploads/278/game-of-thrones-background-full-hd-1920x1080-383408.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    cursor: pointer;
+    
 }
+
 .options {
     display: none;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+.child {
+   align-items: center;
+   margin-top: 15rem;
+
+    
 }
 .rules {
     display: none;
+    color: white;
+    text-align: center;
+    margin-top: 15rem;
 }
+.game {
+    display: none;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-size: 100px;
+}
+#main {
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;
+   color: whitesmoke;
+   font-weight: bold;
+   padding-top: 150px;
+}
+
+#fade-in-text{
+  text-align: center;
+  background-color: black;
+  color: white;
+  animation: fadeIn linear 6s;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+}
+#fade-in-text:hover {
+    background: white;
+    color: black;
+}
+.nuclear {
+    display: none;
+    
+    background: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100%{opacity: 1};
+}
+
 .modal {
    
     background-color: rgba(0, 0,0, .4);
@@ -34,7 +99,8 @@ body {
     
 }
 #modal-textbox{
-    background-color: rgb(255, 254,254);
+    background-color: black;
+    color: red;
     /* height: 350px; */
     width: 550px;
     border-radius: 5px;
@@ -49,7 +115,7 @@ body {
 }
 .modal-buttons {
 	padding: 12px 18px;
-	background-color: #677996;
+	background-color: #b70f0f;
 	border: none;
 	outline: none;
 	border-radius: 3px;
@@ -57,4 +123,17 @@ body {
 	font-family: 'Arial';
 	cursor: pointer;
 
+}
+.choice {
+    background-color: rgb(155, 1, 1);
+    color: white;
+    padding: 2rem;
+}
+.choice:hover {
+    background: white;
+    color: black;
+}
+.questions {
+    text-align: center;
+    margin: auto;
 }

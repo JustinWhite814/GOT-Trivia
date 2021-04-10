@@ -7,34 +7,41 @@
     <link rel="stylesheet" href="style.css">
     <title>Trivia!</title>
 </head>
-<body>
-    <section>
-    <h1>Welcome to the Game of Thrones Trivia Game</h1>
-    <h2>Yes I know... that was a lot of 'games'</h2>
-    <h3>Below there are two buttons, if you like to play hit play</h3>
-    <h4>If you dont understand how trivia works.. then click the other one....</h4>
-    <button class="play">Play</button>
-    <button class="info">Rules</button>
 
+<body>
+    <button onclick="window.location.reload()" class="nuclear">Reload</button>
+    <section id="main">
+    <h1>Welcome to Game of Thrones Trivia </h1>
+  
+    <div class="move">
+    <button id="fade-in-text" class="play">Play</button>
+    <button id="fade-in-text" class="info">Rules</button>
+</div>
 </section>
+
+
     <div class="game">
         <div class="question"></div>
-            <div class="choice" id="A"></div>
-            <div class="choice" id="B"></div>
-            <div class="choice" id="C"></div>   
+            <button class="choice" id="A"></button>
+            <button class="choice" id="B"></button>
+            <button class="choice" id="C"></button>   
         </div>
         <div class="modal">
-            <h1 id="modal-textbox">That is Correct!!!!</h1>
+            <div id="modal-textbox">
+            <h1>Volar Morghulis</h1>
             <button class="modal-buttons" id="close">Close</button>
         </div>
+        </div>
         <div class="noModal">
-            <h1 id="modal-textbox">Sorry that's Incorrect!!!!!</h1>
+            <div id="modal-textbox">
+            <h1>Dracarys!</h1>
             <div class="modal-footer">
             <button class="modal-buttons" id="close">Close</button>
         </div>
         </div>
+        </div>
 
-        <button onclick="window.location.reload()">Back</button>
+        
         <div class="rules">
             <h1>The rules are pretty simple. You have 3 categories to choose from. Once you choose from said categories you’ll be led to questions. You cannot move on from the question until you get it right. I’m not a fan of 
                 pass/fail so we’ll just let you guess until it’s OBVIOUS.
@@ -44,14 +51,19 @@
         
     </div>
     <div class="options"> 
-        <h1>Congratulations, You've decided to play, below are 3 buttons with various topics attached to them</h1>
-        <h2>Once you pick on the questions will auto appear on the screen! Have fun!</h2>
-        <button class="dragon">Dragons</button>
-        <button class="houses">House</button>
-        <button class="bookshow">Books/Episodes</button>
-    
+        <div class="child">
+        <h1>Choose your category below.. Beware Daenerys doesn't take kindly to foolishness....</h1>
+        <button class="dragon choice">Dragons</button>
+        <button class="houses choice">House</button>
+        <button class="bookshow choice">Books / Eps</button>
     </div>
-       
+    </div>
+    
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>   
     <script src="script.js"></script>
+    
 </body>
 </html>
