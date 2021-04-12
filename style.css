@@ -1,7 +1,7 @@
 body {
    
     background-image: url('https://wallpapermemory.com/uploads/278/game-of-thrones-background-full-hd-1920x1080-383408.jpg');
-    /* background-repeat: no-repeat; */
+    font-family: 'Cinzel Decorative', cursive;
     background-size: cover;
     cursor: pointer;
     

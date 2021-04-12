@@ -4,65 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Trivia!</title>
 </head>
 
 <body>
-    <button onclick="window.location.reload()" class="nuclear">Reload</button>
-    <section id="main">
+
+<button onclick="window.location.reload()" class="nuclear">Reload</button>
+<section id="main">
     <h1 id="type"></h1>
-  
+
     <div class="move">
     <button id="fade-in-text" class="play">Play</button>
     <button id="fade-in-text" class="info">Rules</button>
-</div>
+    </div>
 </section>
 
 
-    <div class="game">
-        <div class="question"></div>
-            <button class="choice" id="A"></button>
-            <button class="choice" id="B"></button>
-            <button class="choice" id="C"></button>   
-        </div>
-        <div class="modal">
-            <div id="modal-textbox">
-            <h1>Volar Morghulis</h1>
+<div class="game">
+    <div class="question"></div>
+    <button class="choice" id="A"></button>
+    <button class="choice" id="B"></button>
+    <button class="choice" id="C"></button>   
+</div>
+<div class="modal">
+    <div id="modal-textbox">
+        <h1>Volar Morghulis</h1>
+            <button class="modal-buttons" id="close">Close</button>
+    </div>
+</div>
+<div class="noModal">
+    <div id="modal-textbox">
+        <h1>Dracarys!</h1>
+        <div class="modal-footer">
             <button class="modal-buttons" id="close">Close</button>
         </div>
-        </div>
-        <div class="noModal">
-            <div id="modal-textbox">
-            <h1>Dracarys!</h1>
-            <div class="modal-footer">
-            <button class="modal-buttons" id="close">Close</button>
-        </div>
-        </div>
-        </div>
-
+    </div>
+</div>
         
-        <div class="rules">
-            <h1>The rules are pretty simple. You have 3 categories to choose from. Once you choose from said categories you’ll be led to questions. You cannot move on from the question until you get it right. I’m not a fan of 
-                pass/fail so we’ll just let you guess until it’s OBVIOUS.
-                 Let’s see how well you ACTUALLY know game of thrones  </h1>
-        </div>
-        
-    </div>
-    <div class="options"> 
-        <div class="child">
-        <h1>Choose your category below.. Beware Daenerys doesn't take kindly to foolishness....</h1>
-        <button id="fade-in-text" class="dragon choice">Dragons</button>
-        <button id="fade-in-text" class="houses choice">House</button>
-        <button id="fade-in-text" class="bookshow choice">Books / Eps</button>
-    </div>
-    </div>
+<div class="rules">
+    <h1 id="rules"></h1>
+</div>
     
-    <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>   
-    <script src="script.js"></script>
+<div class="options"> 
+    <div class="child">
+        <h1>Choose your category below.. Beware Daenerys doesn't take kindly to foolishness....</h1>
+        <button id="fade-in-text" class="dragon ">Dragons</button>
+        <button id="fade-in-text" class="houses ">House</button>
+        <button id="fade-in-text" class="bookshow ">Books / Eps</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
     
 </body>
 </html>
