@@ -13,6 +13,9 @@ body {
     text-align: center;
     margin: auto;
 }
+#type {
+    font-size: 50px;
+}
 .child {
    align-items: center;
    margin-top: 15rem;
@@ -61,7 +64,6 @@ body {
 }
 .nuclear {
     display: none;
-    
     background: red;
     position: absolute;
     top: 0;
@@ -102,7 +104,7 @@ body {
     background-color: black;
     color: red;
     /* height: 350px; */
-    width: 550px;
+    width: 250px;
     border-radius: 5px;
     margin: 150px auto;
     box-shadow: 0 2px 2px rbga(0, 0, 0, .4);
@@ -111,7 +113,7 @@ body {
 }
 #modal-textbox {
     text-align: center;
-    /* padding-top: 300px; */
+
 }
 .modal-buttons {
 	padding: 12px 18px;
@@ -128,6 +130,9 @@ body {
     background-color: rgb(155, 1, 1);
     color: white;
     padding: 2rem;
+    text-align: center;
+    animation: fadeIn linear 6s;
+    cursor: pointer;
 }
 .choice:hover {
     background: white;

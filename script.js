@@ -1,21 +1,22 @@
 const dragonBtn = document.querySelector('.dragon')
-const houseBtn = document.querySelector('.houses')
+const houseBtn =  document.querySelector('.houses')
 const bkShowBtn = document.querySelector('.bookshow')
-const playBtn = document.querySelector('.play')
-const option = document.querySelector('.options')
-const rulesBtn = document.querySelector('.info')
+const playBtn =   document.querySelector('.play')
+const option =    document.querySelector('.options')
+const rulesBtn =  document.querySelector('.info')
 const gameStart = document.querySelector('.game')
-const choiceA = document.querySelector('#A')
-const choiceB = document.querySelector('#B')
-const choiceC = document.querySelector('#C')
-const question = document.querySelector('.question')
-const backBtn = document.querySelector('.home')
-const rules = document.querySelector('.rules')
-const modal = document.querySelector('.modal')
-const noModal = document.querySelector('.noModal')
-const close = document.querySelectorAll('#close')
-const nuclear = document.querySelector('.nuclear')
-const section = document.querySelector('section')
+const choiceA  =  document.querySelector('#A')
+const choiceB  =  document.querySelector('#B')
+const choiceC  =  document.querySelector('#C')
+const question =  document.querySelector('.question')
+const backBtn =   document.querySelector('.home')
+const rules   =   document.querySelector('.rules')
+const modal   =   document.querySelector('.modal')
+const noModal =   document.querySelector('.noModal')
+const close   =   document.querySelectorAll('#close')
+const nuclear =   document.querySelector('.nuclear')
+const section =   document.querySelector('section')
+
 
 let questions = [
     
@@ -156,39 +157,29 @@ let questions = [
     ];
 // We need a way to stop the questions from appearing
 const finalQuestion = questions.length - 1;
-
-
-
 // need a way to keep track of the current question
-
 let currentQuestion = 0;
 
 const showQuestion = () => {
     Array.from(document.querySelectorAll('.choice')).forEach(q => q.addEventListener('click', checkAnswer))
-    // this goes through the questions
     let q = questions[currentQuestion]
     // sets the question up on the page
     gameStart.style.display = 'block'
     question.innerHTML = "<div>"+ q.question +"</div>";
     question.classList.add('questions')
-    // gives you choice A:
     choiceA.innerText =  q.a 
-    // choice B:
     choiceB.innerText = q.b
-    // choice C:
     choiceC.innerText = q.c
     // this removes the regular game menu 
     section.style.display = 'none';
     option.style.display = 'none';
     nuclear.style.display = 'block'
-
 }
 
 const showQuestion2 = () => {
     Array.from(document.querySelectorAll('.choice')).forEach(q => q.addEventListener('click', checkAnswer2))
     gameStart.style.display = 'block'
     let q2 = questions2[currentQuestion]
-    
     question.innerHTML = "<p>"+ q2.question +"</p>";
     question.classList.add('questions')
     choiceA.innerText = q2.a
@@ -198,13 +189,11 @@ const showQuestion2 = () => {
     option.style.display = 'none';
     }
 
-const showQuestion3 = () => 
-{
+const showQuestion3 = () => {
 
     Array.from(document.querySelectorAll('.choice')).forEach(q => q.addEventListener('click', checkAnswer3))
     gameStart.style.display = 'block'
     let q3 = questions3[currentQuestion]
-    
     question.innerHTML = "<p>"+ q3.question +"</p>";
     question.classList.add('questions')
     choiceA.innerText = q3.a
@@ -217,24 +206,22 @@ const showQuestion3 = () =>
 
 // Check answer function:
 function checkAnswer(ev)  {
-   
     let q = questions[currentQuestion]
     if(q.correctAnswer == ev.target.id.toLowerCase() ){
     modal.style.display = 'block'
     if(currentQuestion < finalQuestion){
     currentQuestion++
     showQuestion()
-    } }  
+    } 
+    }  
     else 
     {
     noModal.style.display = 'block'
     }
-    
     } 
 
 
 function checkAnswer2(ev) {
-   
     let q2 = questions2[currentQuestion]
     if(q2.correctAnswer == ev.target.id.toLowerCase()){
         modal.style.display = 'block'
@@ -263,10 +250,12 @@ function checkAnswer3(ev) {
     else {
         noModal.style.display = 'block'
         }
+       
 }
 // new functionality
 function showOptions(ev){
     ev.preventDefault()
+   
     option.style.display = 'block'
     section.style.display = 'none'
     nuclear.style.display = 'flex'
@@ -274,7 +263,7 @@ function showOptions(ev){
 
 const showRules = () => {
     rules.style.display = 'flex';
-    rules.style.textAlign = "center"
+    // rules.style.textAlign = "center"
     option.style.display = 'none';
     section.style.display = 'none';
     nuclear.style.display = 'flex'
@@ -284,7 +273,18 @@ const closeModal = () => {
     modal.style.display = 'none'
     noModal.style.display = 'none'
 };
+let i = 0;
+let type = 'Welcome to Game Of Thrones Trivia!';
+let speed = 100;
 
+function typer() {
+    if(i < type.length){
+        document.getElementById('type').innerHTML += type.charAt(i);
+        i++;
+        setTimeout(typer, speed);
+    }
+}
+typer()
 
 close.forEach(close => close.addEventListener('click', closeModal))
 playBtn.addEventListener('click', showOptions)
