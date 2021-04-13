@@ -34,11 +34,11 @@ let questions = [
     {
         question: "Which Dragon was killed first",
         
-        a: 'Rhaegal',
+        a: 'Viscerion',
         b: 'Drogon',
-        c: 'Viscerion'
+        c: 'Rhaegal'
         ,
-        correctAnswer: 'c'
+        correctAnswer: 'a'
     },
     {
         question: "Based on question 2 how did that dragon die",
@@ -80,11 +80,11 @@ let questions2 = [
     {
         question: "How many children of the house Baratheon Lived?",
         
-        a: '8',
-        b: '5',
-        c: '1'
+        a: '1',
+        b: '7',
+        c: '3'
         ,
-        correctAnswer: 'c'
+        correctAnswer: 'a'
     },
     {
         question: "A _____ always repays their debts?",
@@ -126,11 +126,11 @@ let questions3 = [
     {
         question: "Which Stark child/children could warg in the books",
         
-        a: 'Aria,Bran, Robb',
+        a: 'All of them',
         b: 'Sansa, Rickon',
-        c: 'All of them'
+        c: 'Aria,Bran, Robb'
         ,
-        correctAnswer: 'c'
+        correctAnswer: 'a'
     },
     {
         question: "What season/episode did the Battle of the Bastards take place?",
