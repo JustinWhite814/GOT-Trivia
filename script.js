@@ -112,7 +112,7 @@ let questions2 = [
         correctAnswer: 'b'      
     },
 ];
-
+// I wanted to use 3 different questions arrays.
 let questions3 = [
 
     {
@@ -230,7 +230,6 @@ typer()
 close.forEach(close => close.addEventListener('click', closeModal))
 playBtn.addEventListener('click', showOptions)
 rulesBtn.addEventListener('click', showRules)
-
 dragonBtn.addEventListener('click', () => refactoredShowQuestion(questions))
 houseBtn.addEventListener('click', () => refactoredShowQuestion(questions2))
 bkShowBtn.addEventListener('click', () => refactoredShowQuestion(questions3))
