@@ -13,21 +13,23 @@ body {
     text-align: center;
     margin: auto;
 }
+
 #type {
     font-size: 50px;
 }
+
 .child {
    align-items: center;
    margin-top: 15rem;
-
-    
 }
+
 .rules {
     display: none;
     color: white;
     text-align: center;
     margin-top: 15rem;
 }
+
 .game {
     display: none;
     text-align: center;
@@ -35,6 +37,7 @@ body {
     color: white;
     font-size: 100px;
 }
+
 #main {
    margin: 0 auto;
    display: flex;
@@ -58,10 +61,12 @@ body {
   padding-bottom: 30px;
   
 }
+
 #fade-in-text:hover {
     background: white;
     color: black;
 }
+
 .nuclear {
     display: none;
     background: red;
@@ -69,13 +74,13 @@ body {
     top: 0;
     right: 0;
 }
+
 @keyframes fadeIn {
     0% {opacity: 0;}
     100%{opacity: 1};
 }
 
 .modal {
-   
     background-color: rgba(0, 0,0, .4);
     position: fixed;
     top: 0;
@@ -87,6 +92,7 @@ body {
     margin: auto;
     display: none;
 }
+
 .noModal {
     background-color: rgba(0, 0,0, .4);
     position: fixed;
@@ -100,6 +106,7 @@ body {
     display: none;
     
 }
+
 #modal-textbox{
     background-color: black;
     color: red;
@@ -111,10 +118,12 @@ body {
     padding: 5rem;
     
 }
+
 #modal-textbox {
     text-align: center;
 
 }
+
 .modal-buttons {
 	padding: 12px 18px;
 	background-color: #b70f0f;
@@ -126,6 +135,7 @@ body {
 	cursor: pointer;
 
 }
+
 .choice {
     background-color: rgb(155, 1, 1);
     color: white;
@@ -134,10 +144,12 @@ body {
     animation: fadeIn linear 6s;
     cursor: pointer;
 }
+
 .choice:hover {
     background: white;
     color: black;
 }
+
 .questions {
     text-align: center;
     margin: auto;
