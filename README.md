@@ -29,8 +29,10 @@ Manipulation as well as different functions to constantly write over the HTML.
 
 
 ## Hurdles 
-I would say learning even more about nested arrays and dom manipulation. I have some work to do in that area.
-I did learn a lot though, This project really helped bring me closer to understanding it all.
+Markup : 
+ * I would say learning even more about nested arrays and dom manipulation. 
+ * I have some work to do in that area.
+ * I did learn a lot though, This project really helped bring me closer to understanding it all.
 
 ## Technologies / Sites
 https://www.w3schools.com/howto/howto_js_typewriter.asp
