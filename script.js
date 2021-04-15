@@ -19,7 +19,7 @@ const section =   document.querySelector('section')
 let i = 0;
 let type = 'Welcome to Game Of Thrones Trivia!';
 let speed = 100;
-let rule = "The rules are pretty simple. You have 3 categories to choose from. Once you choose from said categories you’ll be led to questions. You cannot move on from the question until you get it right." ;
+let rule = "The rules are pretty simple. You have 3 categories to choose from. Once you choose from said categories you’ll be led to questions. You cannot move on from the question until you get it right.";
 let currentQuestion = 0;
 let questions = [
 
@@ -163,7 +163,7 @@ let questions3 = [
 // this is my refactored code
 function refactoredShowQuestion(currentQuestions) {
     const questionEl = document.querySelector('.question')
-    // learned From Aaron Cordova:
+    
     function eventListener(e) { 
         let q = currentQuestions[currentQuestion]
         if (q.correctAnswer == e.target.id.toLowerCase()) {
@@ -171,6 +171,7 @@ function refactoredShowQuestion(currentQuestions) {
             if (currentQuestion < currentQuestions.length - 1) {
             currentQuestion++
             // this function stops the event listener from adding on new ones everytime it is clicked
+            // learned from Aaron Cordova
             this.removeEventListener('click', eventListener)
             refactoredShowQuestion(currentQuestions)
         }} 
