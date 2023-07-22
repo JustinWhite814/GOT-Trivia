@@ -1,4 +1,4 @@
-# Project 1
+# Game Of Thrones Trivia
 
 ## Description
 * Welcome to Game Of Thrones Trivia. It's a pretty simple game really.
