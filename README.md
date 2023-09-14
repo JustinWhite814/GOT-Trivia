@@ -8,6 +8,7 @@
 * I used some DOM Manipulation as well as different functions to constantly write over the HTML. 
 * Just have fun with it!
 
+[Live Link](https://justinwhite814.github.io/GOT-Trivia/)
 
 ## Users
 * Avid Game of Thrones fans that love the books and the shows.
